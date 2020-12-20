@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Task from './components/Task';
 import Title from './components/Title'
+import AddItem from './components/AddItem';
 
 
 class App extends Component {
@@ -11,12 +12,11 @@ class App extends Component {
       <div className="App">
         <div className='list'>
           <Title />
-          <Task task='Eat'/>
-          <Task task='Shower'/>
-          <Task task='Groceries'/>
-          <Task task='Work'/>
-          <Task task='Eat Again'/>
-          <Task task='Sleep'/>
+          <Task task='Work' number='0' />
+          <Task task='Groceries' number='1' />
+          <Task task='Laundry' number='2' />
+          <Task task='Work' number='3' />
+          <AddItem />
         </div>
       </div>
     );
