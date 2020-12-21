@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className='list'>
+        <div id='list'>
           <Title />
           <Task task='Work' number='0' />
           <Task task='Groceries' number='1' />
