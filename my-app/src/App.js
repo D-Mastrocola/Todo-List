@@ -1,5 +1,4 @@
 import React, { Component, useState } from 'react';
-import ReactDOM from 'react-dom';
 import './App.css';
 import Task from './components/Task';
 import Title from './components/Title'
