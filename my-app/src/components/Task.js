@@ -43,7 +43,10 @@ class Task extends Component {
       }
     }
   }
-
+  removeTask(task) {
+    task.remove();
+    return 1;
+  }
   deleteTask() {
     let task = document.getElementById(this.state.number);
     task.innerHTML = ''

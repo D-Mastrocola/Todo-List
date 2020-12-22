@@ -164,7 +164,6 @@ body,
   padding: 2px;
   margin: .5em .5em 0 .5em;
   box-sizing: border-box;
-  outline: 0;
-  border: 2px solid #283c4a;
-  border-radius: 5px;
+  border: #888 3px solid;
+  border-radius: 2px;
 }
