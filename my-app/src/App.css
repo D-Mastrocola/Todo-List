@@ -11,10 +11,10 @@ body,
   font-family: "Lato", sans-serif;
 }
 .App {
-  width: 400px;
+  width: 600px;
 }
 .list-container {
-  width: 300px;
+  width: 400px;
 }
 .list-title {
   background-color: #50b9ff;
@@ -49,7 +49,7 @@ body,
   display: flex;
   align-items: center;
   padding: 10px;
-  height: 76px;
+  height: 150px;
   box-sizing: border-box;
 }
 .checkbox {
@@ -115,14 +115,15 @@ body,
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 
-  font-size: 1.3em;
+  font-size: 1.8em;
 }
-.list-task img {
-  width: 20%;
+.trash-can {
+  height: 100%;
   background: none;
   border: none;
   outline: none;
-  padding: 1.3em;
+  padding: 2.5em;
+  box-sizing: border-box;
   box-sizing: border-box;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -131,7 +132,7 @@ body,
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
-.list-task img:hover {
+.trash-can:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -148,7 +149,7 @@ body,
   border-radius: 10px;
   align-self: center;
   outline: 0;
-  margin: .5em 0 .5em .5em;
+  margin: 0.5em 0 0.5em 0.5em;
   cursor: pointer;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
@@ -162,8 +163,32 @@ body,
   width: calc(100% - 1em);
   height: 1.5em;
   padding: 2px;
-  margin: .5em .5em 0 .5em;
+  margin: 0.5em 0.5em 0 0.5em;
   box-sizing: border-box;
   border: #888 3px solid;
   border-radius: 2px;
+}
+
+@media (max-width: 500px) {
+  html,
+  body,
+  #root {
+    display: block;
+  }
+  .App {
+    margin: 0;
+    width: 100%;
+  }
+  .list {
+    width: 100%;
+  }
+  .task {
+    font-size: 1.3em;
+  }
+  .list-task {
+    height: 76px;
+  }
+  .trash-can {
+    padding: 1em;
+  }
 }
