@@ -28,11 +28,9 @@ class Task extends Component {
   completeTask() {
     
     let task = document.querySelectorAll('#' + this.state.selectorId);
-    console.log(task)
     for (let i = 0; i < task.length; i++) {
       let checked = task[i].checked;
       let textStyle = document.querySelectorAll('#' + this.state.textId)[0].style;
-      console.log(textStyle)
       if (checked) {
         textStyle.textDecoration = 'line-through';
         textStyle.opacity = .5;

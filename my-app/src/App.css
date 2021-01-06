@@ -2,7 +2,6 @@ html,
 body,
 #root {
   width: 100%;
-  height: 100%;
   margin: 0;
   background-color: #dfd1ff;
   display: flex;
@@ -169,7 +168,7 @@ body,
   border-radius: 2px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   html,
   body,
   #root {

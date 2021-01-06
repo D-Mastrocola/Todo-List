@@ -10,23 +10,23 @@ const App = () => {
     let input = document.querySelector('.add-item-input');
     setTaskList(taskList.concat(<Task task={input.value} key={taskList.length} number={taskList.length} />))
     input.value = '';
-};
-return (
-  <div className="App">
-    <div id='list'>
-      <Title />
-      <Task task="Eat" number='plac0'/>
-      <Task task="Work" number='plac1'/>
-      <Task task="Code" number='plac2'/>
-      <Task task="Sleep" number='plac3'/>
-      {taskList}
+  };
+  return (
+    <div className="App">
+      <div id='list'>
+        <Title />
+        <Task task="Eat" number='plac0' />
+        <Task task="Work" number='plac1' />
+        <Task task="Code" number='plac2' />
+        <Task task="Sleep" number='plac3' />
+        {taskList}
+      </div>
+      <div className='add-item-container'>
+        <input className='add-item-input' type='text' placeholder='Enter something here...'></input>
+        <button className='add-item-btn' onClick={() => addTask()}>Add Item</button>
+      </div>
     </div>
-    <div className='add-item-container'>
-      <input className='add-item-input' type='text' placeholder='Enter something here...'></input>
-      <button className='add-item-btn' onClick={() => addTask()}>Add Item</button>
-    </div>
-  </div>
-);
+  );
 
 
 
